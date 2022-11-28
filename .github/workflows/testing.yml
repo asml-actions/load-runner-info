@@ -34,7 +34,7 @@ jobs:
           echo '${{ steps.load-runner-info-org.outputs.grouped }}' > 'runners-grouped-organization.json'
             
       - name: Upload result file as artefact for inspection
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with: 
           name: runners-organization-${{ env.organization }}
           path: 'runners-**.json'
