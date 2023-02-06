@@ -103,7 +103,7 @@ jobs:
         env:
           url: ${{ steps.publish.outputs.url }}
 
-      - uses: rajbos-actions/slack@v1
+      - uses: rajbos-actions/slack@v2
         with: 
           status: ${{ job.status }}
         env:
